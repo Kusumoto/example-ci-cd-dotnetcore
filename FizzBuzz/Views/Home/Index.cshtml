@@ -1,0 +1,22 @@
+﻿@model FizzBuzz.ViewModels.FizzBuzzCriteriaViewModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container">
+    <form asp-controller="Home" asp-action="Calculate" method="post" class="form-horizontal">
+        <h3>Fizz Buzz</h3>
+        <div class="form-group">
+            <label asp-for="InputNumber" class="control-label col-md-2">Input Number</label>
+            <div class="col-md-10">
+                <input asp-for="InputNumber" class="form-control" />
+                <span asp-validation-for="InputNumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
