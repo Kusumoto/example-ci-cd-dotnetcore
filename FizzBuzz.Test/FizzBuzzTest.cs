@@ -11,7 +11,7 @@ namespace FizzBuzz.Test
         public void Fizzbuzz_TestCase_1()
         {
             var fizzBuzz = new FizzBuzzService().GetFizzBuzzResult(1);
-            Assert.Equal("1", fizzBuzz);
+            Assert.Equal("0", fizzBuzz);
         }
         [Fact]
         public void Fizzbuzz_TestCase_2()
